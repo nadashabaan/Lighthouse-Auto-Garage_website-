@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="park_out.css">
+    <link rel="stylesheet" href="park_out.js">
+    <script src="park_out.js" defer></script>
+</header>
+<body>
+    <div class="logo">
+        <a href="Home.html"><img src="logo.JPG" /></a>
+    </div>
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Parkin.html">Park In</a></li>
+            <li><a href="Parkout.html">Park Out </a></li>
+            <li><a href="About.html">About Us </a></li>
+            <li><a href="contact us.html">Contact Us </a></li>
+        </ul>
+    </nav>
+
+    <div class="dark">
+        <h1 style="text-align:center;"> Park out </h1>
+        <form>
+            <br>
+
+            <div class="text">
+                <p>Identification Number</p>
+                <input type="text" placeholder="Enter Identification Number">
+                <br />
+                <input class="button" type="submit" value="Save">
+                <p>Time Of Arrival </p>
+                <input type="text" placeholder="Enter time for your arrival  " id="arrival" >
+                <p>Time Of Departure </p>
+                <input type="text" placeholder="Enter time for your departure  " id="departure"  >
+                <br />
+                <input  class="button" type="button"  Value="Fees calculation" onClick="fees()"/>
+                <br>
+                <p>The cost of staying in the garage : <br>
+                    <span id="result"></span>
+                </p>
+
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+﻿body, html {
+   
+    margin: 0;
+    padding: 0;
+}
+nav {
+    width: 100%;
+    overflow: auto;
+    background: rgba(255,255,255,.5);
+    height: 100px;
+}
+
+ul {
+    margin: 0 0 0 500px;
+    list-style: none;
+}
+
+li {
+   float: left;
+}
+
+ li a {
+    width:100px;
+    display:block;
+    padding:30px 25px;
+    text-decoration: none;
+    font-family:Arial;
+    color:black;
+    text-align: center;
+}
+
+    li a:hover {
+        background: #FFCF00;
+        text-transform: uppercase;
+    }
+    .logo img{
+        position:absolute;
+        
+        width: 260px;
+    }
+
+

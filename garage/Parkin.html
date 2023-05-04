@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Vehicle's Data </title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="park in.css" />
+    <link rel="stylesheet" href="parkin.js" >
+
+
+</head>
+
+<body>
+    <div class="logo">
+        <a href="Home.html"><img src="logo.JPG" /></a>
+    </div>
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Parkin.html">Park In</a></li>
+            <li><a href="Parkout.html">Park Out </a></li>
+            <li><a href="About.html">About Us </a></li>
+            <li><a href="contact us.html">Contact Us </a></li>
+        </ul>
+    </nav>
+
+    <div id="abdo" class="dark">
+        <div class="text_heading"> <h1>Vehicle's Data </h1></div>
+        <form action="" method="get">
+            <div class="errors list">
+                <div class="error" v-for="error in form list "></div>
+
+            </div>
+            <div>
+                <label class="text" for="name">Name</label><br />
+                <input type="text"
+                       class="fields"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your Name"
+                      onkeyup="validate_name()" /> 
+                />
+                <span id="name error"></span>
+            </div>
+
+            <br />
+
+            <div>
+                <label class="text" for="Email">Email</label><br />
+                <input type="text"
+                       class="fields"
+                       id="Email"
+                       placeholder="Enter your email"
+                       name="email"
+                      onkeyup="validate_email()" /> 
+                <span id="email error"></span>
+            </div>
+
+            <br />
+            <div>
+                <label class="text" for="phone">Mobile number</label><br />
+                <input type="text"
+                       class="fields"
+                       id="phone"
+                       placeholder="Enter your mobile number"
+                       name="phone" />
+            </div>
+            <br />
+            <div>
+                <label class="text">model name</label><br>
+                <input class="fields"
+                       type="text"
+                       id="name"
+                       name="model name"
+                       placeholder="Enter your model name " 
+                       required  />
+            </div>
+            <br />
+            <div>
+                <label class="text"> identification number</label><br>
+                <input type="text"
+                       class="fields"
+                       id="in"
+                       placeholder="Enter your identification_number"
+                       name=" identification number "
+                      
+                       required />
+            </div>
+            <br />
+            <div class="text">
+
+                <label> Model year </label><br>
+                <input class="fields"
+                       type="number" name="Model year "
+                       placeholder="Enter your Model year"
+                        required />
+
+            </div>
+            <br />
+            <div class="text">
+                <label> vehicle width  </label><br>
+                <input type="number" class="fields" id="vw" placeholder="Enter your vehicle width" name="vehicle width" step="2000"
+                       required>
+
+
+            </div>
+            <br />
+            <div class="text">
+                <label>
+                    vehicle depth
+                </label><br>
+                <input type="number" class="fields" id="vd" name=" vehicle depth"
+                       placeholder="Enter your vehicle depth"
+                       required>
+            </div>
+            <br />
+
+            <div class="submission">
+
+                 <a href="available slots.html">save</a> 
+            </div>
+        </form>
+    </div>
+    <script src="parkin.js"></script> 
+
+</body>
+</html>
